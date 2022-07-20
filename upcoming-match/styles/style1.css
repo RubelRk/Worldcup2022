@@ -75,6 +75,7 @@ body{
 
 /* side blogs area start */
 
+
 .side-blog{
     margin-right: 20px;
     background-color: black;
@@ -101,11 +102,13 @@ body{
 .button a:hover{
     border: 3px solid rgb(59, 181, 230);
 }
+.button #upcoming{
+    background-color: #DD0000;
+}
 .button #group{
     padding: 10px 75px;
 }
 .button #blog{
-    background-color: #DD0000;
     padding: 10px 95px;
 }
 /* side blogs area end */
@@ -119,79 +122,58 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
 }
-
-.card, #myDIV{
-    animation:rubel2 5s infinite;
-    /* border: 15px solid coral; */
+.card{
     border-radius: 10px;
     width: 312px;
-    height: 362px;
     border: 3px solid rgba(128, 128, 128, 0.1);
+    height: 242px;
 }
-@keyframes rubel2 {
-    50% {border-color:blueviolet;}
-  }
 .card:hover{
-    overflow: hidden;
     border: 3px solid rgb(59, 181, 230);
 }
-.card-img img{
+.card-img{
+    justify-content: center;
+    display: flex;
+}
+.card-img p{
+    padding:25px 15px 20px ;
+}
+.card-img1 ,.card-img2 img{
+    padding-top: 20px;
     padding-bottom: 20px;
-    width: 312px;
-    height: 175px;
+    width: 94px;
+    height: 57px;
 }
 .card-info{
-    padding-left: 20px;
+    padding-left: 10px;
 }
-.blog-button{
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 5px 25px;
-    border: 1px solid grey;
+.card-info h4{
+    text-align: center;
 }
 .card-info p{
-    font-size: 18px;
-    font-weight: 600;
-}
-.card-icon{
+    text-align: center;
     color: grey;
-    display: flex;
-    align-items: center;
-
-}
-.card-icon span{
-    padding-right: 50px;
-}
-.card-icon span i{
-    padding-right: 10px;
-}
-.card-icon img{
-    padding-right: 10px;
 }
 /* main blog area end  */
 
 /* blog area end  */
 /* view all area start  */
 .view-all{
-display: flex;
-justify-content: center;
-padding: 30px 0;
-}
-.view-all a{
-    visibility:hidden;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #DD0000;
-    border-radius: 5px;
-}
-/* view all area end */
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    }
+    .view-all a{
+        visibility:hidden;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #DD0000;
+        border-radius: 5px;
+    }
+    /* view all area end */
 
 /* main area end  */
-
 
 
 /* footer area start  */
@@ -254,6 +236,8 @@ padding: 30px 0;
 
 
 @media only screen and (max-width:768px) {
+
+/* responsive phone view */
 
 /* header section */
     .header-area{
